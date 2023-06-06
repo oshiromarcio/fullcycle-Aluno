@@ -211,14 +211,6 @@ describe("Order repository test", () => {
 
         const foundOrders = await orderRepository.findAll();
 
-        console.log("foundOrders", foundOrders);
-
-        console.log("[ order1, order2 ]", [ order1, order2 ]);
-        console.log("order1", order1.items);
-        console.log("order2", order2.items);
-
-        console.log("count", foundOrders.length);
-
         expect(foundOrders).toEqual([ order1, order2 ]);
     });
 });
