@@ -43,4 +43,8 @@ export default class Order {
     total(): number {
         return this._items.reduce((acc, item) => acc + item.orderItemTotal(), 0);
     }
+
+    addItem(newItem: OrderItem) {
+        this._items.push(newItem);
+    }
 }
