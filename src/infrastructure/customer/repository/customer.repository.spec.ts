@@ -35,10 +35,10 @@ describe("Product repository test", () => {
             name: customer.name,
             active: customer.isActive(),
             rewardPoints: customer.rewardPoints,
-            street: customer.Address.street,
-            number: customer.Address.number,
-            city: customer.Address.city,
-            zipcode: customer.Address.zipcode
+            street: customer.address.street,
+            number: customer.address.number,
+            city: customer.address.city,
+            zipcode: customer.address.zipcode
         });
     });
 
@@ -55,10 +55,10 @@ describe("Product repository test", () => {
             name: customer.name,
             active: customer.isActive(),
             rewardPoints: customer.rewardPoints,
-            street: customer.Address.street,
-            number: customer.Address.number,
-            zipcode: customer.Address.zipcode,
-            city: customer.Address.city
+            street: customer.address.street,
+            number: customer.address.number,
+            zipcode: customer.address.zipcode,
+            city: customer.address.city
         });
 
         customer.changeName("Customer 2");
@@ -69,10 +69,10 @@ describe("Product repository test", () => {
             name: customer.name,
             active: customer.isActive(),
             rewardPoints: customer.rewardPoints,
-            street: customer.Address.street,
-            number: customer.Address.number,
-            zipcode: customer.Address.zipcode,
-            city: customer.Address.city
+            street: customer.address.street,
+            number: customer.address.number,
+            zipcode: customer.address.zipcode,
+            city: customer.address.city
         });
     });
 
